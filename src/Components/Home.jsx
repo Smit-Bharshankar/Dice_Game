@@ -1,8 +1,17 @@
-import React from 'react'
+import React , {useState} from 'react'
 import styled from 'styled-components';
 import dices from '../assets/dices.png'
+import PopupModal from './PopupModal'
 
-function Home({toggle}) {
+
+function Home({toggle }) {
+
+
+  const handleOnclick = () => {
+    toggle();
+    setShowPopup(true)
+  }
+
   return (
     <Container>
         <div>
@@ -10,7 +19,7 @@ function Home({toggle}) {
         </div>
         <div>
         <h1>Dice Game</h1>
-    <Button onClick={toggle}>Play Now</Button>
+    <Button onClick={handleOnclick}>Play Now</Button>
         </div>
     </Container>
   )

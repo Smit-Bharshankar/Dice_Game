@@ -1,0 +1,29 @@
+//       import React, { useState } from 'react';
+
+// function Popup({ handleClose }) {
+//   return (
+   
+//   );
+// }
+
+// {/* function PopupModal() {
+//   const [showPopup, setShowPopup] = useState(false);
+
+//   const togglePopup = () => {
+//     setShowPopup(!showPopup);
+//   }
+
+//   return (
+//     <div className="App">
+//       <h1>Dice Game</h1>
+//       <button onClick={togglePopup}>Show Rules</button>
+//       {showPopup && <Popup handleClose={togglePopup} />}
+//     </div>
+//   );
+// }
+
+// export default PopupModal;
+
+//     </div>
+//   )
+// } */}

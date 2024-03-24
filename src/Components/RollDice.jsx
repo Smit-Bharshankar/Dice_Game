@@ -26,7 +26,7 @@ const RollDice = ({currentDice , setCurrentDice , numSelected , setNumSelected ,
 
     useEffect(() => {
       checkMatch();
-    }, [currentDice, numSelected]); // Run checkMatch whenever currentDice or numSelected changes
+    }, [currentDice]); // Run checkMatch whenever currentDice or numSelected changes (numSelected Removed for bug fix)
   
     const checkMatch = () => {
       if (currentDice === (numSelected - 1 )) {

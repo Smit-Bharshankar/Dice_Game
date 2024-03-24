@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
 import RollDice from './RollDice';
+import PopupModal from './PopupModal';
 
 const Gameplay = ({toggle}) => {
 
@@ -9,6 +10,10 @@ const Gameplay = ({toggle}) => {
   const [ Score , setScore ] = useState(0);
   const [Error , setError] = useState(null);
 
+  const [showPopup , setShowPopup] = useState(true)
+  const handleClosePopup = () => {
+    setShowPopup(false); // Hide the popup when "Got It" button is clicked
+  };
 
   const dive = [ 1,2,3,4,5,6];
 
@@ -19,6 +24,9 @@ const Gameplay = ({toggle}) => {
 
   return (
     <>
+           < PopupModal gotbtn = {handleClosePopup}  showPopup={showPopup}/>
+
+    <div>
     {/* HOME Button */}
     <Button onClick={toggle}>Main Menu</Button>
 
@@ -49,7 +57,9 @@ const Gameplay = ({toggle}) => {
        setError={setError}
        
        />
-       
+
+       </div>
+
     </>
   )
 }
