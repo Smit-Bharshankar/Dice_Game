@@ -9,7 +9,7 @@ function Home({toggle }) {
 
   const handleOnclick = () => {
     toggle();
-    setShowPopup(true)
+    // setShowPopup(true)
   }
 
   return (

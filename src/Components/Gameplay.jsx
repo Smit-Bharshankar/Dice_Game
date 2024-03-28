@@ -67,10 +67,12 @@ const Gameplay = ({toggle}) => {
 export default Gameplay
 
 const NumSelecter = styled.div`
+
+
 p{
   font-size:24px;
   font-weight:bold;
-  margin-top:8px;
+  margin-top:20px;  
 }
 `
 
@@ -80,6 +82,7 @@ const Topdisplay = styled.div`
 display: flex;
 justify-content: space-around;
 align-items:center;
+margin-top:6px;
 `
 
 const BoxDisplay = styled.div`
@@ -130,7 +133,7 @@ const Scorecomp = styled.div `
 
 
 h1{
-  font-size:80px;
+  font-size:90px;
 }
 h2{
   font-size:26px;
